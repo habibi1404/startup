@@ -1,0 +1,33 @@
+.main p{
+    text-transform: capitalize;
+}
+
+.home{
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, green 55%, red 55%);
+}
+
+.home img{
+    width: 400px;
+    height: 300px;
+}
+
+.sign{
+    height: 100vh;
+    background-color: lavender;
+}
+
+.lap{
+    height: 100vh;
+    background-image: url(../laptop.png);
+}
+
+.foot{
+    background-color: black;
+    color: wheat;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

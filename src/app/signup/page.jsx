@@ -1,10 +1,12 @@
 import React from 'react'
 import Buttons from '../components/Buttons'
 import Input from '../components/Input'
+import page from '../components/styles.module.css'
 
 export default function SignUp() {
   return (
-   <section className="m-auto w-1/2">
+   <div className={page.sign}>
+    <section className="m-auto w-1/2">
     <form>
       <ul>
           <Input type='text'  place='your username' userid='user'/>
@@ -14,5 +16,6 @@ export default function SignUp() {
       <Buttons status='Sign Up'/>
     </form>
    </section>
+   </div>
   )
 }

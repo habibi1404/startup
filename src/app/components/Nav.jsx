@@ -5,7 +5,7 @@ import React from 'react'
 export default function Navbar(){ 
     return (
         <nav>
-            <ul className='flex justify-between p-8 bg-slate-900 text-white'>
+            <ul className='flex justify-between p-8 bg-blue-900 text-white'>
                 <li>
                     <Link href='/'>Home</Link>
                 </li>

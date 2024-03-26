@@ -1,6 +1,8 @@
 import { Courgette } from "next/font/google"
 import "./globals.css"
 import Navbar from "./components/Nav"
+import habeeb from './components/styles.module.css'
+import Footer from './components/Footer'
 
 const cook = Courgette({ 
   subsets: ["latin"],
@@ -14,10 +16,17 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={habeeb.main}>
       <body className={`${cook.className} text-2xl`}>
           <Navbar/>
+
+          <div className='min-h-[80vh]'>
           {children}
+          </div>
+
+          <Footer/>
+
+
       </body>
     </html>
   )

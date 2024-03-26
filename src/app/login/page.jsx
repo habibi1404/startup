@@ -1,10 +1,12 @@
 import React from 'react'
 import Buttons from '../components/Buttons'
 import Input from '../components/Input'
+import img from '../components/styles.module.css'
 
 export default function Login() {
   return (
-    <section className='m-auto w-1/2'>
+    <div className={img.lap}>
+          <section className='m-auto w-1/2'>
     <form>
       <ul>
       <Input type='text'  place='your username' userid='user'/>
@@ -16,5 +18,7 @@ export default function Login() {
 
     </form>
    </section>
+    </div>
+
   )
 }
